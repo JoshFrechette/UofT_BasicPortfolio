@@ -1,0 +1,39 @@
+.content {
+    box-align: center; 
+    width: 600px;
+    padding: 30px 80px 80px 80px;
+    margin: 30px 30px 30px 30px;
+    background-color: #ffffff;
+    border: #666666;
+}
+
+p {
+    float: left;
+    
+}
+
+.center {
+    padding: 70px 0;
+    text-align: center;
+}
+
+img {
+    padding: 10px 10px 10px 10px;
+    clear: left;
+}
+
+.portfolio {
+    border: 2em;
+    border-color: aqua;
+}
+
+.profile {
+    clear: left;
+    float: left;
+}
+
+footer {
+    margin: 30px;
+}
+
+
