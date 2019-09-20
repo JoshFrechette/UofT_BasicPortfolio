@@ -49,10 +49,7 @@ li {
     display:inline;       /* keeps nav horizontal, but makes float impossible*/
 }
 
-a {
-    float: right;
-    padding: 8px;
-}
+
 
 img {
     
@@ -150,7 +147,8 @@ footer {
     
     display: block;
     padding: 2px;
-    width: auto;
+    height: 20px;
+    width: 30px;
     max-width: 20px;
     background-color: #4aaaa5;
     color: #ffffff;
