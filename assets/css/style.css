@@ -3,12 +3,14 @@ header {
     height: 70px;
     width: 100%;
     background-color:#ffffff;
-    border: #cccccc;
+    border-bottom: 5px solid  #cccccc;
+    
 }
 
 nav {
     padding: 5px;
-    
+    /*need something here that will keep the nav to the right of the header and static*/
+    /*float: right;*/
     border: #777777;
     display: inline;
     
@@ -38,6 +40,7 @@ p, .navigation, a {
 }
 
 p {
+    
     line-height: 150%;
 }
 
@@ -52,14 +55,15 @@ a {
 }
 
 img {
-    border: 2px;
-    padding: 10px 10px 10px 10px;
+    
+    
     height: 200px;
     width: 200px;
 }
 
 .profile {
-    padding: 0px 10px 10px 0px;
+    float: left;
+    padding: 0px 20px 10px 0px;
 }
 
 .content {
@@ -72,8 +76,10 @@ img {
 }
 
 input {
-    width: auto;
-    margin-right: 10px;
+    min-width: 740px;
+    display: block;
+    
+    
 }
 
 .gallery {
@@ -82,14 +88,20 @@ input {
     
 }
 
+.portfolio {
+    margin: 20px 20px 20px 0px;
+    border: 1px solid #777777;
+
+}
+
 .caption {
-    width: 200px;
-    height: 25%;
+    width: 201px;
+    height: 10%;
     text-align: center;
-    line-height: 150%;
+    padding: 10px 0px 10px 0px;
     position: absolute;
-    bottom: 10%;
-    left: 0%;
+    bottom: 13%;
+    left: 0px;
     color: white;
     background-color: #4aaaa5;
 
@@ -99,16 +111,16 @@ input {
 
 footer {
     
-    bottom: 0;
-    height:2.5rem;
+    font-size: 50%;
+    color: #ffffff;
+    position: bottom;
+    border-top: 5px solid #4aaaa5;
+    display: 0;
+    height:2rem;
     width: 100%;
     text-align: center;
-    
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px 0px 0px;
     background-color: #666666;
-    
-    border-top-color: #4aaaa5;
-
 }
 
 #nav-li::after {
@@ -132,23 +144,19 @@ footer {
     width: 960px;
   }
   
-#footer {
-    
-    padding:8px;
-    position: bottom;
-    width: 100%;
-               
-  }
 
-  #submit {
-    size:150%;
-    margin: 10px 0px 0px 0px;
+
+#submit {
+    
+    display: block;
+    padding: 2px;
     width: auto;
+    max-width: 20px;
     background-color: #4aaaa5;
     color: #ffffff;
   }
 
-  hr {
+hr { /*h2 and content divider*/
     display: block;
     margin-top: 0.5em;
     margin-bottom: 2em;
