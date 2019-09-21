@@ -3,7 +3,7 @@ header {
     height: 70px;
     width: 100%;
     background-color:#ffffff;
-    border-bottom: 5px solid  #cccccc;
+    border-bottom: 2px solid  #cccccc;
     
 }
 
@@ -34,7 +34,7 @@ h2 {
 }
 
 
-p, .navigation, a {
+p, .navigation, a, form {
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -72,7 +72,11 @@ img {
     border: #dddddd;
 }
 
-input {
+#name, #email, #subject {
+    position: relative;
+    margin: .5rem 0;
+    border: solid 1px grey;
+    min-height: auto;
     min-width: 740px;
     display: block;
     
@@ -96,7 +100,7 @@ input {
     height: 10%;
     text-align: center;
     padding: 10px 0px 10px 0px;
-    position: absolute;
+    position: absolute;  /*this is keeping the text within the frame of the images*/
     bottom: 13%;
     left: 0px;
     color: white;
@@ -122,7 +126,7 @@ footer {
 
 #nav-li::after {
     content: "|";
-    float: "right";
+    
     color: #777777;
     padding: 0 2px;
 }
@@ -131,28 +135,35 @@ footer {
     display: none;
 }
 
-#page-container {
-    position: relative;
-    min-height: 100vh;
-  }
+
   
 #content-wrap {
+    
     padding: 20px 20px 20px 20px; 
     width: 960px;
   }
+
+form {
+      display: block;
+      
+  }
   
 
 
-#submit {
+#submitBtn {
     
+    border:0;
     display: block;
     padding: 2px;
-    height: 20px;
-    width: 30px;
-    max-width: 20px;
-    background-color: #4aaaa5;
+    margin: 1rem 0;
+    height: 30px;
+    width: 80px;
+    text-transform: 200%;
+    background: #4aaaa5;
     color: #ffffff;
   }
+
+
 
 hr { /*h2 and content divider*/
     display: block;
@@ -162,4 +173,10 @@ hr { /*h2 and content divider*/
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
+  }
+
+  #page-container {
+    margin: auto;
+    position: relative;
+    min-height: 100vh;
   }
