@@ -9,6 +9,8 @@
 
 p {
     float: left;
+    clear: left;
+   
     
 }
 
@@ -33,7 +35,13 @@ img {
 }
 
 footer {
+    border-top-width: 15px;
     margin: 30px;
 }
 
-
+#footer {
+padding: 8px;
+    position: bottom;
+    width: 100%;
+    border-top: 5px solid #4aaaa5;
+}

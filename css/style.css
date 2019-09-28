@@ -1,10 +1,9 @@
-/* Attempt to move the background element into css instead on in line html
 body {
-    background-image: url("/assets/images/trees.png");
+    background-image: url("assets/images/trees.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #cccccc;
-}*/
+}
 header {
     height: 70px;
     width: 100%;
